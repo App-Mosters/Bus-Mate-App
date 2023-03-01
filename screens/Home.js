@@ -5,7 +5,8 @@ import React,{Component,Fragment} from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import ProfileTab from './ProfileTab';
+import HomeTab from './HomeTab';
 
 const Home = () => {
     const Tab = createBottomTabNavigator();
@@ -13,10 +14,7 @@ const Home = () => {
     function HomeScreen() {
         return (
           //Home screen code
-          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Home!</Text>
-            
-          </View>
+          <HomeTab/>
 
         );
       }
@@ -33,9 +31,10 @@ const Home = () => {
       function Profile() {
         return (
           //profile screen code
-          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Profile!</Text>
-          </View>
+          //<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            //<Text>Profile!</Text>
+          //</View>
+          <ProfileTab/ >
         );
       }
       
